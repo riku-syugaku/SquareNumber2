@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+<meta charset="utf-8">
+<title>平方数</title>
+
+<link rel = "stylesheet" href = "css/style.css">
+</head>
+
+<body>
+
+<section class = "container">
+   
+<p id = "test-title">平方数</p>
+
+<section id = "modal" class = "hidden">
+    <p id = "win">レベル</p>
+    
+    <a><img src="img/win.png"> </a>
+    <br>
+
+    <button id = "close">問題選択へ</button>
+
+
+</section>
+
+
+
+<section id = "modal2" class = "hidden">
+    <p>残念！！やり直し！</p>
+
+    <img src="img/ng.png">
+    <br>
+    <p id = "answer">残念！！
+    
+    </p>
+    <style>
+        .exponent {
+            vertical-align: super;
+            font-size: smaller;
+        }
+    </style>
+
+    <button id = "okay">OK</button>
+</section>
+
+<section id = "modal3" class = "hidden">
+ <p id = "isCorrected"></p>
+ <img src="img/ok.png"> 
+</section>
+
+<section id = "modal4" class = "hidden">
+    <p id = "lose"></p>
+    <img src="img/lose.png"> 
+    <br>
+    <button2 id = "lose" type="reset-button" value="リセット"  onclick="buttonClick5();"  >やり直す</button2>
+
+   </section>
+
+
+<button name="No1" id ="No1" class="No1"    onclick="buttonClick1()">  Lv.１  </button>
+<button name="No2" id ="No2" class="No1"  onclick="buttonClick2()" >  Lv.２  </button>
+<button3 name="reset" id ="reset" class="reset"  onclick="buttonClick5()" >  リセット  </button3>
+
+<div class = "TimeAndScore" > 
+    <div id ="Qnum">  </div> 
+    <div id ="timescore"> </div>
+</div>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<div id = "question"> 
+    <style>
+        .exponent { vertical-align: super; font-size: smaller; }
+    </style>
+ </div>
+<form name = "kotae">
+    <input id ="yanswer" type="text" class="display" name="display" value="" />  
+</form>
+
+
+</p>
+<ul id = "choice1" class = "choices"></ul>   
+
+<section2>
+<tr>
+<button name="1" id ="1" value ="1" onclick = "getNum(this)">  １  </button>
+<button name="2" id ="2" value ="2" onclick = "getNum(this)">  ２  </button>
+<button name="3" id ="3" value ="3" onclick = "getNum(this)">  ３  </button>
+
+<br>
+
+
+<button name="4" id ="4" value ="4" onclick = "getNum(this)">  ４  </button>
+<button name="5" id ="5" value ="5" onclick = "getNum(this)">  ５  </button>
+<button name="6" id ="6" value ="6" onclick = "getNum(this)">  ６  </button>
+<button name="7" id ="7" value ="7" onclick = "getNum(this)">  ７  </button>
+<button name="8" id ="8" value ="8" onclick = "getNum(this)">  ８  </button>
+<button name="9" id ="9" value ="9" onclick = "getNum(this)">  ９  </button>
+<button name="10" id ="0" value ="0" onclick = "getNum(this)">  0  </button>
+
+<button name="check" id ="check" class="check"  value ="check" onclick = "getNum(this)">  確認  </button>
+<button name="clear" id ="clear" class="check" value ="clear" onclick = "getNum(this)">  削除  </button>
+</tr>
+
+</section2>
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+
+<script src = "js/main.js"></script>
+</body>
+
+</html>
